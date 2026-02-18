@@ -46,6 +46,37 @@
         <section class="hugetitle">
           <h1 class="page-title">Effective Solutions for Your Buisness</h1>
           <button type="button" class="page-button">Order service</button>
+          <form class="modal">
+            <fieldset class="inputs">
+              <legend class="group-title">Leave your contacts and we will call you back
+              </legend>
+
+            <label class="form-label">
+              Name
+              <input type="text" name="username" placeholder="">
+            </label>
+            <label class="form-label">
+              Phone
+              <input type="tel" name="phonenumber" placeholder="">
+            </label>
+            <label class="form-label">
+              Email
+              <input type="email" name="email" placeholder="">
+            </label>
+            
+            <label class="textarea-label">
+              Comment
+              <textarea name="feedback" rows="5" placeholder="Text input">
+              </textarea>
+            </label>
+            </fieldset>
+            <label class="checkbox-label">
+              <input type="checkbox" name="accept-terms" value="accept"/>
+              <span class="terms">I accept the terms and conditions of the </span>
+              <span class="policy-link">Privacy Policy</span>
+            </label>
+            <button type="submit" class="modal-button">Send</button>
+          </form>
         </section>
 
         <section>
@@ -392,6 +423,21 @@
                   </li>
                 </ul>
         </div>
+        
+        <div>
+          <form class="subscribe">
+            <label>
+              Subscribe
+              <input type="email" name="E-mail" placeholder="E-mail"/>
+            </label>
+          <button type="submit" class="footer-button">Subscribe
+            <svg  width="16" height="16">
+              <use href="icons.svg#icon-send"></use>
+            </svg>
+          </button>
+          </form>
+        </div>
+
       </footer>
     </div>
   </body>
