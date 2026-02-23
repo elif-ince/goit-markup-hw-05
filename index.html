@@ -53,20 +53,20 @@
 
             <label class="form-label">
               Name
-              <input type="text" name="username" placeholder="">
+              <input type="text" name="username" placeholder="" class="inputfield">
             </label>
             <label class="form-label">
               Phone
-              <input type="tel" name="phonenumber" placeholder="">
+              <input type="tel" name="phonenumber" placeholder="" class="inputfield">
             </label>
             <label class="form-label">
               Email
-              <input type="email" name="email" placeholder="">
+              <input type="email" name="email" placeholder="" class="inputfield">
             </label>
             
             <label class="textarea-label">
               Comment
-              <textarea name="feedback" rows="5" placeholder="Text input">
+              <textarea name="feedback" rows="5" placeholder="Text input" class="textareainput">
               </textarea>
             </label>
             </fieldset>
@@ -426,6 +426,10 @@
         
         <div>
           <form class="subscribe">
+            <label>
+              <svg width="24" height="24"></svg>
+              <use href="icons.svg#icon-send"></use>
+            </label>
             <label>
               Subscribe
               <input type="email" name="E-mail" placeholder="E-mail"/>
