@@ -402,12 +402,21 @@ background-color: #4D5AE5;
       
 }
 
+.close {
+  display: flex;
+  align-items: flex-end;
+  
+}
+
 .inputfield {
   display: flex;
   width: 360px;
   height: 40px;
   border: 1px solid #2E2F4266;
   border-radius: 4px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
   }
 
  .inputfield:hover {
@@ -590,6 +599,7 @@ footer .text{
   
     .subscribe input {
       display: flex;
+      justify-content: center;
       align-content: center;
       font-size: 400;
       width: 264px;
