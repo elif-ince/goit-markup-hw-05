@@ -351,7 +351,20 @@ background-color: #4D5AE5;
   background-color: #4D5AE5;
 }
 
-.modal {
+
+
+.backdrop-is-open {
+background-color: #2E2F42;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+  url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: relative;
+}
+
+.modalform {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -363,6 +376,9 @@ background-color: #4D5AE5;
   width: 408px;
   gap: 16px;
   position: relative;
+  position:absolute;
+  top: -406px;
+  left: -200px;
 }
 
 .group-title {
@@ -398,8 +414,7 @@ background-color: #4D5AE5;
   align-content: left;
   flex-direction: column;
   width: 360px;
-  height: 58px;
-  height: 40px;
+  height: 56px;
   position: relative;    
 }
 
@@ -420,15 +435,20 @@ background-color: #4D5AE5;
   
    }
 
- .inputfield:hover {
+ .inputfield:focus {
   border-color: #4D5AE5;
   } 
 
   .formicons {
   position: absolute;
-top: 19px;
+top:28px;
 left: 16px;
-   }
+color: #2E2F42;
+}
+
+.formicons:focus {
+  color: #4D5AE5;
+}
 
 .group-title{
   display: flex;
@@ -458,7 +478,7 @@ left: 16px;
   padding-bottom: 16px;  
 }
 
-.textareainput:hover {
+.textareainput:focus {
   border-color: #4D5AE5;
   } 
 
@@ -473,7 +493,7 @@ left: 16px;
   border-radius: 4px;
   gap: 8px;
   position: absolute;
-  top: 384px;
+  top: 436px;
   left: 24px;
 }
 
@@ -483,7 +503,7 @@ left: 16px;
   flex-direction: column;
   width: max-width;
   border: none;
-  width: 360px;
+  width: 346px;
   height: 366px;
 }
 
@@ -501,7 +521,7 @@ text-decoration: underline;}
 padding-top: 24px;
 padding-bottom: 24px;
 position: absolute;
-top: 408px;}
+top: 480px;}
 
 .portfolio {
 display: flex;
