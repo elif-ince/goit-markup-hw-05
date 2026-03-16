@@ -447,7 +447,7 @@ background-color: #4D5AE5;
 position: absolute;
 top: 50%;
 left: 16px;
-color: #2E2F42;
+fill: #2E2F42;
 transform: translateY(-50%);
 }
 
@@ -464,11 +464,7 @@ transform: translateY(-50%);
   padding-left: 40px;
   } 
 
- .inputfield:focus {
-  border-color: #4D5AE5;
-  } 
-
-  
+ 
 
 .form-label:focus-within .formicons {
   fill: #4D5AE5;
