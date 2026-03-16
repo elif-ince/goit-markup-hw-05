@@ -384,8 +384,8 @@ background-color: #4D5AE5;
   gap: 16px;
   position: relative;
   position:absolute;
-  top: -406px;
-  left: -200px;
+  top: 80px;
+  left: 516px;
 }
 
 .group-title {
@@ -404,7 +404,7 @@ background-color: #4D5AE5;
 
 .inputs {
   display: flex;
-   align-items: center;
+  align-items: center;
   width: 344px;
   height: 100px;
   padding-top: 16px;
@@ -413,6 +413,7 @@ background-color: #4D5AE5;
   padding-bottom: 8px;
   border-radius: 4px;
   gap: 8px;
+  outline: none;
   
 }
 
@@ -425,6 +426,11 @@ background-color: #4D5AE5;
   position: relative;    
 }
 
+.form-label:focus-within .formicons{
+  color: #4D5AE5;
+}
+
+
 .close {
   display: flex;
   position: absolute;
@@ -433,28 +439,43 @@ background-color: #4D5AE5;
   
 }
 
+.input-wrapper {
+  position: relative;
+   }
+
+.formicons {
+position: absolute;
+top: 50%;
+left: 16px;
+color: #2E2F42;
+transform: translateY(-50%);
+}
+
 .inputfield {
   display: flex;
   width: 360px;
   height: 40px;
   border: 1px solid #2E2F4266;
   border-radius: 4px;
-  
+  padding-left: 35px;
    }
+
+   .inputfield input {
+  padding-left: 40px;
+  } 
 
  .inputfield:focus {
   border-color: #4D5AE5;
   } 
 
-  .formicons {
-  position: absolute;
-top:28px;
-left: 16px;
-color: #2E2F42;
+  
+
+.form-label:focus-within .formicons {
+  fill: #4D5AE5;
 }
 
-.formicons:focus {
-  color: #4D5AE5;
+.form-label:focus-within .inputfield {
+  border-color: #4D5AE5;
 }
 
 .group-title{
